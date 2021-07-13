@@ -1,0 +1,210 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thankyou
+  examples: |
+    - Thanks
+    - Thank you
+    - thank you
+    - thanks
+    - Thank You
+    - Thanks for assistance
+    - Very Thankful
+    - thankful to you
+    - thanking you
+    - very thankful for assistance
+
+- intent: jetski
+  examples: |
+    - I want [jetski]{"entity":"content_type"}
+    - [jetski]{"entity":"content_type"} is my choice
+    - For now I want details about [jetski]{"entity":"content_type"}
+    - I want all details about your [jetski]{"entity":"content_type"} service
+
+- intent: location_service
+  examples: |
+    - I would like to book for [Al Bandar Resort]{"entity":"location_type"}
+    - Booking for [The Art Hotel & Resorts]{"entity":"location_type"} is good
+    - Let me book [The Grove Resort]{"entity":"location_type"}
+    - [Bahrain Yacht Club]{"entity":"location_type"} is good foe booking Jatski
+
+- intent: towablerides
+  examples: |
+    - I want to watch the [towable_rides]{"entity":"content_type"}
+    - [towable_rides]{"entity":"content_type"} is my choice
+    - For now I want details about [towable_rides]{"entity":"content_type"}
+    - I want all details about your [towable_rides]{"entity":"content_type"} service
+
+- intent: towablerides_service
+  examples: |
+    - I want the [Banana Boat]{"entity":"towablerides_type"} Service
+    - [Banana Boat]{"entity":"towablerides_type"} is good for me
+    = I will go for [Subwing]{"entity":"towablerides_type"}
+    - I will try to do [Subwing]{"entity":"towablerides_type"} Service
+    - [Banana Boat]{"entity":"towablerides_type"} seems good
+    - [Subwing]{"entity":"towablerides_type"} seems good
+
+- intent: flyboards
+  examples: |
+    - I want to watch the [fly_boards]{"entity":"content_type"}
+    - [fly_boards]{"entity":"content_type"} is my choice
+    - For now I want details about [fly_boards]{"entity":"content_type"}
+    - I want all details about your [fly_boards]{"entity":"content_type"} service
+
+- intent: kayaks
+  examples: |
+    - I want to watch the [kayaks]{"entity":"content_type"}
+    - [kayaks]{"entity":"content_type"} is my choice
+    - For now I want details about [kayaks]{"entity":"content_type"}
+    - I want all details about your [kayaks]{"entity":"content_type"} service
+
+- intent: paddleboard
+  examples: |
+    - I want to watch the [paddle_board]{"entity":"content_type"}
+    - [paddle_board]{"entity":"content_type"} is my choice
+    - For now I want details about [paddle_board]{"entity":"content_type"}
+    - I want all details about your [paddle_board]{"entity":"content_type"} service
+
+- intent: wakeboarding
+  examples: |
+    - I want to watch the [wake_boarding]{"entity":"content_type"}
+    - [wake_boarding]{"entity":"content_type"} is my choice
+    - For now I want details about [wake_boarding]{"entity":"content_type"}
+    - I want all details about your [wake_boarding]{"entity":"content_type"} service
+
+- intent: waterskiing
+  examples: |
+    - I want to watch the [water_skiing]{"entity":"content_type"}
+    - [water_skiing]{"entity":"content_type"} is my choice
+    - For now I want details about [water_skiing]{"entity":"content_type"}
+    - I want all details about your [water_skiing]{"entity":"content_type"} service
+
+- intent: wakesurfing
+  examples: |
+    - I want to watch the [wake_surfing]{"entity":"content_type"}
+    - [wake_surfing]{"entity":"content_type"} is my choice
+    - For now I want details about [wake_surfing]{"entity":"content_type"}
+    - I want all details about your [wake_surfing]{"entity":"content_type"} service
+
+- intent: kitesurfing
+  examples: |
+    - I want to watch the [kite_surfing]{"entity":"content_type"}
+    - [kite_surfing]{"entity":"content_type"} is my choice
+    - For now I want details about [kite_surfing]{"entity":"content_type"}
+    - I want all details about your [kite_surfing]{"entity":"content_type"} service
+
+- intent: discoverdive
+  examples: |
+    - I want to watch the [discover_dive]{"entity":"content_type"}
+    - [discover_dive]{"entity":"content_type"} is my choice
+    - For now I want details about [discover_dive]{"entity":"content_type"}
+    - I want all details about your [discover_dive]{"entity":"content_type"} service
+
+- intent: juniorpadi
+  examples: |
+    - I want to watch the [junior_padi]{"entity":"content_type"}
+    - [junior_padi]{"entity":"content_type"} is my choice
+    - For now I want details about [junior_padi]{"entity":"content_type"}
+    - I want all details about your [junior_padi]{"entity":"content_type"} service
+
+- intent: adultpadi
+  examples: |
+    - I want to watch the [adult_padi]{"entity":"content_type"}
+    - [adult_padi]{"entity":"content_type"} is my choice
+    - For now I want details about [adult_padi]{"entity":"content_type"}
+    - I want all details about your [adult_padi]{"entity":"content_type"} service
+
+- intent: divingexcursions
+  examples: |
+    - I want to watch the [diving_excursions]{"entity":"content_type"}
+    - [diving_excursions]{"entity":"content_type"} is my choice
+    - For now I want details about [diving_excursions]{"entity":"content_type"}
+    - I want all details about your [diving_excursions]{"entity":"content_type"} service
+
+- intent: snorkling
+  examples: |
+    - I want to watch the [snorkling]{"entity":"content_type"}
+    - [snorkling]{"entity":"content_type"} is my choice
+    - For now I want details about [snorkling]{"entity":"content_type"}
+    - I want all details about your [snorkling]{"entity":"content_type"} service
+
+- intent: discoversailing
+  examples: |
+    - I want to watch the [discover_sailing]{"entity":"content_type"}
+    - [discover_sailing]{"entity":"content_type"} is my choice
+    - For now I want details about [discover_sailing]{"entity":"content_type"}
+    - I want all details about your [discover_sailing]{"entity":"content_type"} service
+
+- intent: adultsailing
+  examples: |
+    - I want to watch the [adult_sailing]{"entity":"content_type"}
+    - [adult_sailing]{"entity":"content_type"} is my choice
+    - For now I want details about [adult_sailing]{"entity":"content_type"}
+    - I want all details about your [adult_sailing]{"entity":"content_type"} service
+
+- intent: youthsailing
+  examples: |
+    - I want to watch the [youth_sailing]{"entity":"content_type"}
+    - [youth_sailing]{"entity":"content_type"} is my choice
+    - For now I want details about [youth_sailing]{"entity":"content_type"}
+    - I want all details about your [youth_sailing]{"entity":"content_type"} service
+
+- intent: powerboat
+  examples: |
+    - I want to watch the [power_boat]{"entity":"content_type"}
+    - [power_boat]{"entity":"content_type"} is my choice
+    - For now I want details about [power_boat]{"entity":"content_type"}
+    - I want all details about your [power_boat]{"entity":"content_type"} service
+
+- intent: sailingboatrentals
+  examples: |
+    - I want to watch the [sailing_boat_rentals]{"entity":"content_type"}
+    - [sailing_boat_rentals]{"entity":"content_type"} is my choice
+    - For now I want details about [sailing_boat_rentals]{"entity":"content_type"}
+    - I want all details about your [sailing_boat_rentals]{"entity":"content_type"} service
+
+- intent: boatcharters
+  examples: |
+    - I want to watch the [boat_charters]{"entity":"content_type"}
+    - [boat_charters]{"entity":"content_type"} is my choice
+    - For now I want details about [boat_charters]{"entity":"content_type"}
+    - I want all details about your [boat_charters]{"entity":"content_type"} service
+
+- intent: embraceadventure
+  examples: |
+    - I want to watch the [embrace_adventure]{"entity":"content_type"}
+    - [embrace_adventure]{"entity":"content_type"} is my choice
+    - For now I want details about [embrace_adventure]{"entity":"content_type"}
+    - I want all details about your [embrace_adventure]{"entity":"content_type"} service
+
+

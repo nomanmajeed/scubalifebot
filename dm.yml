@@ -1,0 +1,203 @@
+version: '2.0'
+
+config:
+  store_entities_as_slots: true
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- jetski:
+    use_entities: true
+- location_service:
+    use_entities: true
+- towablerides:
+    use_entities: true
+- towablerides_service:
+    use_entities: true
+- flyboards:
+    use_entities: true
+- kayaks:
+    use_entities: true
+- paddleboard:
+    use_entities: true
+- wakeboarding:
+    use_entities: true
+- waterskiing:
+    use_entities: true
+- wakesurfing:
+    use_entities: true
+- kitesurfing:
+    use_entities: true
+- discoverdive:
+    use_entities: true
+- juniorpadi:
+    use_entities: true
+- adultpadi:
+    use_entities: true
+- divingexcursions:
+    use_entities: true
+- snorkling:
+    use_entities: true
+- discoversailing:
+    use_entities: true
+- adultsailing:
+    use_entities: true
+- youthsailing:
+    use_entities: true
+- powerboat:
+    use_entities: true
+- sailingboatrentals:
+    use_entities: true
+- boatcharters:
+    use_entities: true
+- embraceadventure:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- thankyou:
+    use_entities: true
+
+entities:
+- content_type
+- location_type
+- towablerides_type
+
+slots:
+  content_type:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  location_type:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  towablerides_type:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+
+responses:
+  utter_greet:
+  - text: Hi, I am Nemo! How can I help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_thankyou:
+  - text: Thank you for connecting to Scuba Life. 😊
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_jetski:
+  - text: Welcome to Jetski Rental.
+  utter_jetski_pricing:
+  - text: >
+      Pricing Details are as Follows:
+      • Half Hour (25 BHD) 
+      • One Hour (40 BHD)
+  utter_jetski_sites:
+  - text: >
+      We Operate in following Locations: 
+      1. Al Bandar (Member/Resort Guest Only)
+      2. The Art Hotel & Resorts 
+        • Entrance Fees (Weekdays 15 BHD , Weekdends 25 BHD)
+        • Members/Guests excluded from entrance fee
+      3. The Grove Resort 
+        • Entrance Fees (Weekdays & Weekdends = 10 BHD )
+        • Members/Guests excluded from entrance fee
+      4. Bahrain Yacht Club
+        • Entrance Fees (2 BHD /Person)
+  utter_jetski_terms:
+  - text: >
+      Following are Terms & Conditions of Jetski: 
+      1. Valid Identification is must: CPR/Passport/Driving Lisence 
+      2. Only adults 18 Years & above will be allowed for Jetski 
+      3. Only 2 passengers can ride a jetski 
+      4. Below 18 Years can ride along with the driver
+  utter_towablerides:
+  - text: Welcome to Towable Rides Section.
+  utter_towablerides_pricing:
+  - text: >
+      Pricing Details are as Follows:
+      • 15 Minutes (20 BHD) 
+      • 30 Minutes (40 BHD)
+  utter_towablerides_sites:
+  - text: >
+      We Operate in following Locations: 
+      1. Al Bandar (Member/Resort Guest Only)
+      2. The Art Hotel & Resorts 
+        • Entrance Fees (Weekdays 15 BHD , Weekdends 25 BHD)
+        • Members/Guests excluded from entrance fee
+      3. The Grove Resort 
+        • Entrance Fees (Weekdays & Weekdends = 10 BHD )
+        • Members/Guests excluded from entrance fee
+      4. Bahrain Yacht Club
+        • Entrance Fees (2 BHD /Person)
+  utter_towablerides_terms:
+  - text: >
+      Following are Terms & Conditions of Jetski: 
+      1. Valid Identification is must: CPR/Passport/Driving Lisence 
+      2. Only adults 18 Years & above will be allowed for Jetski 
+      3. Only 5 passengers can ride a jetski 
+      4. Below 18 Years can ride along with the driver
+  utter_flyboards:
+  - text: Here are the details about flyboards.
+  utter_kayaks:
+  - text: Here are the details about kayaks.
+  utter_paddleboard:
+  - text: Here are the details about paddleboard.
+  utter_wakeboarding:
+  - text: Here are the details about wakeboarding.
+  utter_waterskiing:
+  - text: Here are the details about waterskiing.
+  utter_wakesurfing:
+  - text: Here are the details about wakesurfing.
+  utter_kitesurfing:
+  - text: Here are the details about kitesurfing.
+  utter_discoverdive:
+  - text: Here are the details about discoverdive.
+  utter_juniorpadi:
+  - text: Here are the details about juniorpadi.
+  utter_adultpadi:
+  - text: Here are the details about adultpadi.
+  utter_divingexcursions:
+  - text: Here are the details about divingexcursions.
+  utter_snorkling:
+  - text: Here are the details about snorkling.
+  utter_discoversailing:
+  - text: Here are the details about discoversailing.
+  utter_adultsailing:
+  - text: Here are the details about adultsailing.
+  utter_youthsailing:
+  - text: Here are the details about youthsailing.
+  utter_powerboat:
+  - text: Here are the details about powerboat.
+  utter_sailingboatrentals:
+  - text: Here are the details about sailingboatrentals.
+  utter_boatcharters:
+  - text: Here are the details about boatcharters.
+  utter_embraceadventure:
+  - text: Here are the details about embraceadventure.
+
+actions:
+- main_action_service
+- location_service
+- location_confirmation
+- towablerides_service_type
+- towablerides_service_conformation
+
+
+forms: {}
+
+
+e2e_actions: []

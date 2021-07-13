@@ -1,0 +1,299 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: main_action_service
+
+- story: jetski path
+  steps:
+  - intent: jetski
+    entities:
+      - content_type : "jetski"
+  - slot_was_set:
+    - content_type : "jetski"
+  - action: utter_jetski
+  - action: utter_jetski_pricing
+  - action: utter_jetski_sites
+  - action: utter_jetski_terms
+  - action: location_service
+  - intent: location_service
+  - action: location_confirmation
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: towablerides path
+  steps:
+  - intent: towablerides
+    entities:
+      - content_type : "towable_rides"
+  - slot_was_set:
+    - content_type : "towable_rides"
+  - action: utter_towablerides
+  - action: towablerides_service_type
+  - intent: towablerides_service
+    entities:
+    - towablerides_type: "Banana Boat"
+  - action: towablerides_service_conformation
+  - action: utter_towablerides_pricing
+  - action: utter_towablerides_sites
+  - action: utter_towablerides_terms
+  - action: location_service
+  - intent: location_service
+  - action: location_confirmation
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: flyboards path
+  steps:
+  - intent: flyboards
+    entities:
+      - content_type : "fly_boards"
+  - slot_was_set:
+    - content_type : "fly_boards"
+  - action: utter_flyboards
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: kayaks path
+  steps:
+  - intent: kayaks
+    entities:
+      - content_type : "kayaks"
+  - slot_was_set:
+    - content_type : "kayaks"
+  - action: utter_kayaks
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: paddleboard path
+  steps:
+  - intent: paddleboard
+    entities:
+      - content_type : "paddle_board"
+  - slot_was_set:
+    - content_type : "paddle_board"
+  - action: utter_paddleboard
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: wakeboarding path
+  steps:
+  - intent: wakeboarding
+    entities:
+      - content_type : "wake_boarding"
+  - slot_was_set:
+    - content_type : "wake_boarding"
+  - action: utter_wakeboarding
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: waterskiing path
+  steps:
+  - intent: waterskiing
+    entities:
+      - content_type : "water_skiing"
+  - slot_was_set:
+    - content_type : "water_skiing"
+  - action: utter_waterskiing
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: wakesurfing path
+  steps:
+  - intent: wakesurfing
+    entities:
+      - content_type : "wake_surfing"
+  - slot_was_set:
+    - content_type : "wake_surfing"
+  - action: utter_wakesurfing
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: kitesurfing path
+  steps:
+  - intent: kitesurfing
+    entities:
+      - content_type : "kite_surfing"
+  - slot_was_set:
+    - content_type : "kite_surfing"
+  - action: utter_kitesurfing
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: discoverdive path
+  steps:
+  - intent: discoverdive
+    entities:
+      - content_type : "discover_dive"
+  - slot_was_set:
+    - content_type : "discover_dive"
+  - action: utter_discoverdive
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: juniorpadi path
+  steps:
+  - intent: juniorpadi
+    entities:
+      - content_type : "junior_padi"
+  - slot_was_set:
+    - content_type : "junior_padi"
+  - action: utter_juniorpadi
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: adultpadi path
+  steps:
+  - intent: adultpadi
+    entities:
+      - content_type : "adult_padi"
+  - slot_was_set:
+    - content_type : "adult_padi"
+  - action: utter_adultpadi
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: divingexcursions path
+  steps:
+  - intent: divingexcursions
+    entities:
+      - content_type : "diving_excursions"
+  - slot_was_set:
+    - content_type : "diving_excursions"
+  - action: utter_divingexcursions
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: snorkling path
+  steps:
+  - intent: snorkling
+    entities:
+      - content_type : "snorkling"
+  - slot_was_set:
+    - content_type : "snorkling"
+  - action: utter_snorkling
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: discoversailing path
+  steps:
+  - intent: discoversailing
+    entities:
+      - content_type : "discover_sailing"
+  - slot_was_set:
+    - content_type : "discover_sailing"
+  - action: utter_discoversailing
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: adultsailing path
+  steps:
+  - intent: adultsailing
+    entities:
+      - content_type : "adult_sailing"
+  - slot_was_set:
+    - content_type : "adult_sailing"
+  - action: utter_adultsailing
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: youthsailing path
+  steps:
+  - intent: youthsailing
+    entities:
+      - content_type : "youth_sailing"
+  - slot_was_set:
+    - content_type : "youth_sailing"
+  - action: utter_youthsailing
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: powerboat path
+  steps:
+  - intent: powerboat
+    entities:
+      - content_type : "power_boat"
+  - slot_was_set:
+    - content_type : "power_boat"
+  - action: utter_powerboat
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: sailingboatrentals path
+  steps:
+  - intent: sailingboatrentals
+    entities:
+      - content_type : "sailing_boat_rentals"
+  - slot_was_set:
+    - content_type : "sailing_boat_rentals"
+  - action: utter_sailingboatrentals
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: boatcharters path
+  steps:
+  - intent: boatcharters
+    entities:
+      - content_type : "boat_charters"
+  - slot_was_set:
+    - content_type : "boat_charters"
+  - action: utter_boatcharters
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: embraceadventure path
+  steps:
+  - intent: embraceadventure
+    entities:
+      - content_type : "embrace_adventure"
+  - slot_was_set:
+    - content_type : "embrace_adventure"
+  - action: utter_embraceadventure
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
